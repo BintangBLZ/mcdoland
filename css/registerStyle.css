@@ -1,0 +1,316 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    
+}
+.justifyCenter{
+    justify-content: center;
+}
+.flexEnd{
+    justify-content: flex-end;
+}
+.flexStart{
+    justify-content: flex-start;
+}
+.containerCol{
+    display: flex;
+    flex-direction: column;
+}
+.alignCenter{
+    align-items: center;
+}
+.flex25{
+    flex: 25%;
+}
+.flex50{
+    flex: 50%;
+}
+.flex100{
+    flex:100%;
+}
+.block{
+    display: block;
+}
+.inline{
+    display: inline;
+}
+.logo{
+    width: 4vw;
+    height: 4vw;
+    margin:0px;
+    padding:0px;
+}
+header{
+    background-color: darkgreen;
+}
+header button{
+    height: 50%;
+    margin: 20px auto;
+    color: aliceblue;
+    background-color:darkgreen ;
+    border-style: none;
+}
+header button a{
+    color: aliceblue;
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif;
+    margin: 20px;
+    font-size: medium;
+}
+button a:hover{
+    color:#F7FEBE;
+   
+}
+footer{
+    
+    width:100%;
+    background-color: darkgreen;
+    color: aliceblue;
+}
+footer h3{
+    margin: 20px 20px;
+}
+
+footer button{
+    height: 50%;
+    margin: 20px auto;
+    color: aliceblue;
+    background-color:darkgreen;
+    border-style:none;
+    
+}
+footer button a{
+    color: aliceblue;
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif;
+    margin: 20px;
+    font-size: medium;
+}
+.footerCopy{
+    background-color:#0D4A19;
+    margin-bottom: 0px;
+}
+@media (max-width: 800px) {
+    .container {
+      flex-direction: column;
+    }
+    .flex70{
+        flex: 100%;
+    }
+    .flex30{
+        flex: 100%;
+    }
+    .flex50{
+        flex:100%;
+    }
+    .logo{
+        visibility: hidden;
+    }
+    
+    
+    .btn_home{
+        width: 50%;
+        margin: auto;
+    }
+    .btn_promo{
+        width: 50%;
+        margin: auto;
+    }
+    .btn_foodMenu{
+        width: 50%;
+        margin: auto;
+    }
+    .btn_beverageMenu{
+        width: 50%;
+        margin: auto;
+    }
+    .btn_Register{
+        width: 50%;
+        margin: auto;
+    }
+    form{
+        width:100%;
+    }
+    form input{
+        width: 100%;
+    }
+    
+  }
+  @media (max-width: 400px) {
+    .container {
+      flex-direction: column;
+    }
+    .flex70{
+        flex: 100%;
+    }
+    .flex30{
+        flex: 100%;
+    }
+    .flex50{
+        flex:100%;
+    }
+    .logo{
+        visibility: hidden;
+    }
+    
+    
+    .btn_home{
+        width: 50%;
+        margin: auto;
+    }
+    .btn_promo{
+        width: 50%;
+        margin: auto;
+    }
+    .btn_foodMenu{
+        width: 50%;
+        margin: auto;
+    }
+    .btn_beverageMenu{
+        width: 50%;
+        margin: auto;
+    }
+    .btn_Register{
+        width: 50%;
+        margin: auto;
+    }
+    form{
+        width:100%;
+    }
+    form input{
+        width: 100%;
+    }
+  }
+  .sliderBox{
+    position: relative;
+    width: 50%;
+    height:200px;
+    margin: auto;
+    padding:20px;
+  }
+  .containerSlide{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  .slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+  .slideBtn{
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+  }
+  .prev{
+    left: -1%;
+  }
+  .next{
+    left: 101%;
+  }
+ main section{
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+  }
+  .formItem{
+    margin: 10px;
+    padding: 10px;
+  }
+  form{
+    border: solid black 1px;
+    border-radius: 20px;
+    background-color:aliceblue;
+    
+  }
+  form button{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:#132258;
+    color: aliceblue;
+    font-size: medium;
+  }
+  section h2{
+    text-align: center;
+    margin: 20px;
+  }
+  .formItem input{
+   padding: 10px 0px;
+    
+  }
+  label{
+    font-size: medium;
+  }
+  @media (max-width: 1300px) {
+    .container {
+      flex-direction: column;
+    }
+    .flex70{
+        flex: 100%;
+    }
+    .flex30{
+        flex: 100%;
+    }
+    .flex50{
+        flex:100%;
+    }
+    .logo{
+        visibility: hidden;
+    }
+    
+    
+    .btn_home{
+        width: 50%;
+        margin: auto;
+    }
+    .btn_promo{
+        width: 50%;
+        margin: auto;
+    }
+    .btn_foodMenu{
+        width: 50%;
+        margin: auto;
+    }
+    .btn_beverageMenu{
+        width: 50%;
+        margin: auto;
+    }
+    .btn_Register{
+        width: 50%;
+        margin: auto;
+    }
+    .sliderBox{
+        position: relative;
+        width: 75%;
+        height:50%;
+        margin: auto;
+        padding:20px;
+      }
+      .containerSlide{
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+      }
+      .slide img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+      }
+      .slideBtn{
+        transform: translate(-50%,-50%);
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+      }
+    
+  }

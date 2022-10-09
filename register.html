@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registerStyle.css">
+    <title>Macdoland</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="flex50">
+                <div class="container flexStart">
+                        <img class="logo" src="images/logoMcDoland.png" alt="">
+                </div>
+            </div>
+            <div class="flex50">
+                <div class="container flexEnd">
+                    <div class="container flexEnd aliginCenter justifiyCenter">
+                        <button class="justifiyCenter alignCenter"><a href="index.html">Home</a> </button>
+                        <button class="justifiyCenter alignCenter"><a href="promotion.html">Promotion</a></button>
+                        <button class="justifiyCenter alignCenter"><a href="foodmenu.html">Food Menu</a></button>
+                        <button class="justifiyCenter alignCenter"><a href="beveragemenu.html">Beverage Menu</a></button>
+                        <button class="justifiyCenter alignCenter"><a href="register.html">Register For Delivery</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="flex100">
+                    <h2>Form Pemesanan</h2>
+                    <form action="" class="flex100">
+                        <div class="containerCol">
+                            <div class="container flexStart formItem">
+                                <div class="flex50">
+                                    <label for="name">Nama:</label><span id="nameErr"></span>
+                                </div>
+                                <div class="flex50">
+                                    <input type="text" name="name" id="name" required>
+                                </div>
+                            </div>
+                            <div class="container flexStart formItem">
+                                <div class="flex50">
+                                    <label for="gender">Jenis Kelamin:</label><span id="genderErr"></span>
+                                </div>
+                                <div class="flex50">
+                                    <input type="radio" name="gender" id="male" value="male">
+                                    <label for="male" >Pria</label>
+                                    <input type="radio" name="gender" id="female" value="female">
+                                    <label for="female" >Wanita</label>
+                                </div>
+                            </div>
+                            <div class="container flexStart formItem">
+                                <div class="flex50">
+                                    <label for="address">Alamat:</label><span id="addressErr"></span>
+                                </div>
+                                <div class="flex50">
+                                    <input type="text" name="address" id="address" required>
+                                </div>
+                            </div>
+                            <div class="container flexStart formItem">
+                                <div class="flex50">
+                                    <label for="phone">Nomor Handphone:</label><span id="phoneErr"></span>
+                                </div>
+                                <div class="flex50">
+                                    <input type="tel" name="phone" id="phone" required>
+                                </div>
+                            </div>
+                            <div class="container flexStart formItem">
+                                <div class="flex50">
+                                    <label for="email">Email:</label><span id="emailErr"></span>
+                                </div>
+                                <div class="flex50">
+                                    <input type="email" name="email" id="email" required>
+                                </div>
+                            </div>
+                            <div class="container flexStart formItem">
+                                <div class="flex50">
+                                    <label for="payment">Pembayaran:</label><span id="paymentErr"></span>
+                                </div>
+                                <div class="flex50">
+                                    <select name="payment" id="payment">
+                                        <option value="cash">Tunai</option>
+                                        <option value="Transfer">Transfer</option>
+                                    </select>
+                                </div>
+                                
+                            </div>
+                            <div class="container justifyCenter alignCenter formItem">
+                                <input type="checkbox" id="agree" name="agree" value="agree" required>
+                                <label for="agree"> Saya setuju dengan syarat dan ketentuan</label><br><span id="checkErr"></span>
+                            </div>
+                            <div class="container justifyCenter alignCenter formItem">
+                                <button type="button" onclick="validate()">Pesan</button>
+                            </div>
+                        </div>    
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="flex50">
+                <div class="container flexStart">
+                    <h3>“<i>Kurus atau gendut adalah pilihan <br> Akan tetapi makan enak adalah kebutuhan</i>” <br><br>  -Anonim-</h3>
+                </div>
+            </div>
+            <div class="flex50">
+                <div class="container flexStart">
+                    <div class="containerCol">
+                        <div>
+                            <h3>Hubungi Kami:</h3>
+                        </div>
+                        <div class="container flexStart">
+                            <button class="justifiyCenter alignCenter"><a href="https://www.instagram.com/"><img src="https://img.icons8.com/color/48/undefined/instagram-new--v1.png"/></a> </button>
+                            <button class="justifiyCenter alignCenter"><a href="https://www.facebook.com/"><img src="https://img.icons8.com/color/48/undefined/facebook-new.png"/></a></button>
+                            <button class="justifiyCenter alignCenter"><a href="https://twitter.com/"><img src="https://img.icons8.com/fluency/48/undefined/twitter.png"/></a></button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container footerCopy">
+            <div class="flex100">
+                <div class="container justifyCenter alignCenter">
+                    <div>
+                        <pre><h3>Hak Cipta &copy  2022</h3></pre> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="js/registerVal.js"></script>
+</body>
+</html>
